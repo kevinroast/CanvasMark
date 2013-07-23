@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>CanvasMark 2013 - HTML5 Canvas 2D Rendering and JavaScript Benchmark</title>
+      <script async defer src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+      <script src="scripts/mathlib-min.js"></script>
+      <script src="scripts/k3d-min.js"></script>
+      <script src="scripts/gamelib_benchmark.js"></script>
+      <script src="scripts/asteroids_main_benchmark.js"></script>
+      <script src="scripts/asteroids_player.js"></script>
+      <script src="scripts/asteroids_weapons.js"></script>
+      <script src="scripts/asteroids_enemies.js"></script>
+      <script src="scripts/asteroids_effects.js"></script>
+      <script src="scripts/arena_main_benchmark.js"></script>
+      <script src="scripts/arena_3d.js"></script>
+      <script src="scripts/arena_effects.js"></script>
+      <script src="scripts/arena_enemies.js"></script>
+      <script src="scripts/arena_player.js"></script>
+      <script src="scripts/arena_weapons.js"></script>
+      <script src="scripts/benchmark_main.js"></script>
+      <script src="scripts/feature_main_benchmark.js"></script>
+      <style type="text/css">
+@font-face
+{
+	font-family: HelveticaNeue;
+	src: url('HelveticaNeueLTStd-Lt.otf');
+}
+@font-face
+{
+	font-family: HelveticaNeueBold;
+	src: url('HelveticaNeueLTStd-Md.otf');
+}
+@font-face
+{
+	font-family: OstrichSans;
+	src: url('ostrich-black-webfont.woff');
+}
+body
+{
+   background-color: #aaa;
+   font-family: HelveticaNeue, Helvetica;
+   color: #333;
+}
+.title
+{
+   font-family: OstrichSans, Helvetica;
+   padding-left: 20px;
+   padding-top: 6px;
+   color: #000;
+   font-size: 1.75em;
+}
+P
+{
+   font-size: 1em;
+   padding-left: 20px;
+   padding-top: 0;
+   padding-bottom: 0;
+   line-height: 1.5em;
+}
+P.left
+{
+   padding-left: 2em;
+}
+.small
+{
+   font-family: HelveticaNeue, Helvetica;
+   text-align: center;
+   font-size: 0.85em;
+}
+a, a:visited, a:active, a:hover
+{
+   color: #225588;
+   text-decoration: none;
+}
+a:hover
+{
+   text-decoration: underline;
+}
+
+.box-shadow
+{
+   box-shadow: 0px 3px 16px #222;
+}
+
+.wrapper
+{
+   padding-top: 12px;
+   text-align: center;
+}
+
+.info
+{
+   display: inline-block;
+   margin-left: 1.5em;
+   text-align: left;
+   vertical-align: top;
+}
+
+.infopanel
+{
+   background-color: #F0F0FF;
+   display: inline-block;
+   line-height: 2em;
+   padding: 1.5em;
+   width: 28em;
+}
+
+canvas
+{
+   border: 1px solid #333;
+   background-color: #000;
+}
+
+.results
+{
+}
+
+.results-wrapper
+{
+   display: none;
+   border: 1px solid #AAAAAA;
+   background-color: #ddd;
+   margin-left: 1em;
+}
+
+.prose
+{
+   font-family: HelveticaNeueBold, Helvetica;
+   font-size: 0.85em;
+   line-height: 1.4em;
+}
+      </style>
+      <meta name="description" content="CanvasMark - HTML5 Canvas 2D Rendering and JavaScript Benchmark by Kevin Roast" />
+   </head>
+   
+   <body>
+      
+      <div class="wrapper">
+         <canvas class="box-shadow" id="canvas" width="640" height="640"></canvas>
+         <div class="info">
+            <div class="infopanel">
+               <div class="title">CanvasMark 2013 - HTML5 Canvas 2D Rendering and JavaScript Benchmark</div>
+               <div>
+                  <p>Tests the HTML5 &lt;canvas&gt; rendering performance for commonly used operations in HTML5 games: drawImage, drawImage scaling, alpha, composition modes, points, lines, fills, shadows and text functions.</p>
+               </div>
+               <div id="results-wrapper" class="results-wrapper">
+                  <div class="results" id="results"></div>
+                  <div class="results"><p><a id="tweetlink" href="#" target="new">Tweet this result.</a></p></div>
+               </div>
+               <div>
+                  <p>Run benchmark using HTML5 compatible browser: <a href="http://www.google.co.uk/chrome" target="new">Chrome</a> | <a href="http://www.mozilla.com/firefox" target="new">FireFox</a> | <a href="http://www.apple.com/safari/download" target="new">Safari</a> | <a href="http://www.opera.com/download" target="new">Opera</a> | <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home" target="new">IE9/10</a>.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="padding-top:16px" class="small">---DEBUG TEST PAGE---</div>
+   </body>
+</html>

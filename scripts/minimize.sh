@@ -1,0 +1,1 @@
+cat gamelib_benchmark.js feature_main_benchmark.js asteroids_main_benchmark.js asteroids_player.js asteroids_enemies.js asteroids_weapons.js asteroids_effects.js arena_main_benchmark.js  arena_3d.js arena_player.js arena_weapons.js arena_enemies.js arena_effects.js benchmark_main.js > canvasmark.js
