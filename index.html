@@ -5,6 +5,8 @@
       <script src="scripts/mathlib-min.js"></script>
       <script src="scripts/k3d-min.js"></script>
       <script src="scripts/canvasmark_v6.js"></script>
+      <script async defer src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+      <script async defer src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e4813104686cad8"></script>
       <style type="text/css">
 @font-face
 {
@@ -150,6 +152,16 @@ a.toggler:active
    </head>
    
    <body>
+      <div class="button-overlay">
+         <!-- AddThis Button BEGIN -->
+         <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+         <a class="addthis_button_preferred_1"></a>
+         <a class="addthis_button_preferred_2"></a>
+         <a class="addthis_button_compact"></a>
+         <a class="addthis_counter addthis_bubble_style"></a>
+         </div>
+         <!-- AddThis Button END -->
+      </div>
       <div class="wrapper">
          <canvas class="box-shadow" id="canvas" width="640" height="640"></canvas>
          <div class="info">
@@ -185,6 +197,7 @@ a.toggler:active
                </div>
                <div>
                   <p class="prose">Benchmark version 1.1 [25-03-2013]</p>
+                  <p class="prose">Source code now available on <a href="https://github.com/kevinroast/CanvasMark">GitHub</a>.</p>
                </div>
             </div>
          </div>
